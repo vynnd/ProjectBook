@@ -1,13 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './layouts/NavbarAndFooter/Navbar';
+import { Footer } from './layouts/NavbarAndFooter/Footer';
+import { HomePage } from './layouts/HomePage/HomePage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome to full-stack project :-)</h1>
+    <div>
+      <Navbar/>
+      <HomePage/>
+      <Footer/>
     </div>
+
   );
 }
-
-export default App;
