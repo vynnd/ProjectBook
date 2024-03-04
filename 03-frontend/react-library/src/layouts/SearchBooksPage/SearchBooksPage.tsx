@@ -105,7 +105,7 @@ const categoryFielId = (value: string) => {
     }else {
         
         setCategorySelection("All");
-        setSearchUrl(`&page=<pageNumber>&size=${bookPerPage}`)
+        setSearchUrl(`?page=<pageNumber>&size=${bookPerPage}`)
     }
 }
 
