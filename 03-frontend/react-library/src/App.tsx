@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './layouts/NavbarAndFooter/Navbar';
 import { Footer } from './layouts/NavbarAndFooter/Footer';
 import { HomePage } from './layouts/HomePage/HomePage';
 import { SearchBooksPage } from './layouts/SearchBooksPage/SearchBooksPage';
+import { BookCheckoutPage } from './layouts/BookCheckOutPage/BookCheckoutPage'
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 export const App = () => {
@@ -23,6 +23,10 @@ export const App = () => {
 
         <Route path='/search'>
           <SearchBooksPage/>
+        </Route>
+
+        <Route path='/checkout/:bookId'>
+          <BookCheckoutPage/>
         </Route>
       </Switch>
       </div>
