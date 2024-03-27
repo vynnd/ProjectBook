@@ -17,7 +17,7 @@ export const CheckoutAndReviewBox: React.FC<{ book: BookModel | undefined, mobil
                 return(<p className="text-danger">Too many books checked out.</p>)
             }
         }
-        return(<Link to={'login'} className="btn btn-success btn-lg">Sign in</Link>)
+        return(<Link to='/login' className="btn btn-success btn-lg">Sign in</Link>)
     }
 
     function reviewRender() {
